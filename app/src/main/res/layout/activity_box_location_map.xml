@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+       <FrameLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="픽업박스"
+                android:fontFamily="@font/bmfont"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:background="@color/fui_transparent"
+                android:textColor="@color/vpi__background_holo_light"
+                />
+
+            <ImageButton
+                android:id="@+id/btnGoBack"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="@dimen/padding_10"
+                android:background="@drawable/backarrow"/>
+
+       </FrameLayout>
+
+
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/mapV"
+                android:name="com.google.android.gms.maps.MapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="500dp" />
+
+
+
+
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnChk"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="@color/fui_transparent"
+            android:fontFamily="@font/bmfont"
+            android:textSize="15dp"
+            android:textColor="@color/fui_linkColor"
+            android:text="반경 5km 내의 택배 정보 보기" />
+
+    </FrameLayout>
+
+</LinearLayout>
+

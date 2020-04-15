@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="560dp">
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapV"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="560dp" />
+
+        <Button
+            android:id="@+id/btnGoBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left|top"
+            android:background="@drawable/gobackicon"
+            android:layout_marginTop="485dp"
+            android:layout_marginLeft="10dp" />
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btnChk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fui_transparent"
+        android:fontFamily="@font/bmfont"
+        android:textColor="@color/vpi__bright_foreground_inverse_holo_light"
+        android:text="반경 5km 내의 택배 정보 보기" />
+
+    <ScrollView
+        android:id="@+id/scollview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/DDtext"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:hint="information about Direction point"
+            android:textSize="15dp" />
+    </ScrollView>
+
+</LinearLayout>
+

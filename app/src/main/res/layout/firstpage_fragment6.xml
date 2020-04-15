@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    android:gravity="bottom"
+    app:umanoDragView="@id/dragView"
+    app:umanoScrollableView="@id/rcView"
+    app:umanoPanelHeight="130dp"
+    app:umanoOverlay="false"
+    app:umanoParallaxOffset="200dp"
+    app:umanoShadowHeight="150dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapV2"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="350dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/DDtext2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bmfont"
+                android:gravity="center"
+                android:hint="지도에서 도착지를 선택하세요!"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/btnOkay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fui_transparent"
+                android:fontFamily="@font/bmfont"
+                android:text="네! 여기로 배송할래요!" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dragView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="false"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16sp"
+                android:text="리스트에서 보세요."
+                android:fontFamily="@font/bmfont"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <!-- 스크롤 해서 보여줄 부분은 listview 또는 custom listview 또는 recyclerview를 사용 -->
+        <!--<ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+        </ListView>
+        -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scrollbars="vertical"/>
+
+    </LinearLayout>
+
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>
+

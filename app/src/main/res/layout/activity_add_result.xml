@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".Register_Box.AddResult">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:fontFamily="@font/bmfont"
+                android:text="상품 명 :"
+                android:textColor="@color/vpi__bright_foreground_inverse_holo_light" />
+
+            <TextView
+                android:id="@+id/tvARboxname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:fontFamily="@font/bmfont"
+                android:gravity="center"
+                android:text="boxName"
+                android:textColor="@color/vpi__bright_foreground_inverse_holo_light"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:textColor="@color/vpi__bright_foreground_inverse_holo_light"
+                android:fontFamily="@font/bmfont"
+
+                android:text="상품 크기 :" />
+
+            <TextView
+                android:id="@+id/tvARboxsize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:gravity="center"
+                android:text="boxSize"
+                android:textColor="@color/vpi__bright_foreground_inverse_holo_light"
+                android:fontFamily="@font/bmfont"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:textColor="@color/vpi__bright_foreground_inverse_holo_light"
+                android:fontFamily="@font/bmfont"
+                android:text="도착 예정 시간 :" />
+
+            <TextView
+                android:id="@+id/tvARpickuptime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:gravity="center"
+                android:textColor="@color/vpi__bright_foreground_inverse_holo_light"
+                android:fontFamily="@font/bmfont"
+                android:text="Pick up Time"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:textColor="@color/vpi__bright_foreground_inverse_holo_light"
+                android:fontFamily="@font/bmfont"
+                android:text="배송비 :" />
+
+            <TextView
+                android:id="@+id/tvARboxprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:gravity="center"
+                android:textColor="@color/vpi__bright_foreground_inverse_holo_light"
+                android:fontFamily="@font/bmfont"
+                android:text="box Price"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tvARmylatitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:textSize="15dp"
+                android:textColor="@color/vpi__bright_foreground_inverse_holo_light"
+                android:fontFamily="@font/bmfont"
+                android:text="my latitude"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/tvARmylongitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:textSize="15dp"
+                android:textColor="@color/vpi__bright_foreground_inverse_holo_light"
+                android:fontFamily="@font/bmfont"
+                android:text="my longitude"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tvARDestlatitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:textSize="15dp"
+                android:textColor="@color/vpi__bright_foreground_inverse_holo_light"
+                android:fontFamily="@font/bmfont"
+                android:text="dest latitude"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/tvARDestlongitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:textColor="@color/vpi__bright_foreground_inverse_holo_light"
+                android:fontFamily="@font/bmfont"
+                android:textSize="15dp"
+                android:text="dest longitude"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapV2"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_width="280dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:textColor="@color/vpi__bright_foreground_inverse_holo_light"
+                android:fontFamily="@font/bmfont"
+
+                android:text="배달 예상 소요 거리 :" />
+
+            <TextView
+                android:id="@+id/tvARDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:gravity="center"
+                android:text="Distance "
+                android:textColor="@color/vpi__bright_foreground_inverse_holo_light"
+                android:fontFamily="@font/bmfont"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:textColor="@color/vpi__bright_foreground_inverse_holo_light"
+                android:fontFamily="@font/bmfont"
+                android:text="배달 예상 소요 시간 : " />
+
+            <TextView
+                android:id="@+id/tvARDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:gravity="center"
+                android:text="Duration time"
+                android:textColor="@color/vpi__bright_foreground_inverse_holo_light"
+                android:fontFamily="@font/bmfont"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnDBplus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/fui_transparent"
+                android:fontFamily="@font/bmfont"
+                android:textColor="#ff7a00"
+                android:text="배달 등록해주세요!" />
+
+            <Button
+                android:id="@+id/btnReturn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/fui_transparent"
+                android:fontFamily="@font/bmfont"
+                android:text="취소 할래요!"
+                android:textColor="#ff7a00" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

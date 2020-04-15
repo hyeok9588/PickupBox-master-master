@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context=".FragDialog_AddList">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bmfont"
+        android:layout_marginLeft="@dimen/padding_10"
+        android:textSize="17dp"
+        android:textColor="@color/vpi__background_holo_light"
+        android:text="리스트에서.." />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcView2"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scrollbars="vertical"/>
+
+</LinearLayout>

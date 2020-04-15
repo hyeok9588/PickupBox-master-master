@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Pay.PhoneAuth">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="전화번호로 인증을 위한 페이지"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="+82" />
+
+    <Button
+        android:id="@+id/bt_send_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="sendCode"
+        android:text="보내기" />
+
+    <Button
+        android:id="@+id/bt_resend_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="resendCode"
+        android:text="재전송" />
+
+    <EditText
+        android:id="@+id/et_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="인증번호 입력"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/bt_verify_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="verifyCode"
+        android:text="확인" />
+</LinearLayout>

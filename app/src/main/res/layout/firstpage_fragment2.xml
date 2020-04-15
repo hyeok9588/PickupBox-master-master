@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    android:weightSum="1"
+    >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnChat1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:fontFamily="@font/bmfont"
+            android:textColor="@color/vpi__background_holo_light"
+            android:background="@color/fui_transparent"
+            android:onClick="onClick"
+            android:text="배송 예정 시간 알려줘!" />
+
+        <Button
+            android:id="@+id/btnChat2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="190dp"
+            android:fontFamily="@font/bmfont"
+            android:textColor="@color/vpi__background_holo_light"
+            android:background="@color/fui_transparent"
+            android:onClick="onClick"
+            android:text="내 택배는 지금 어디쯤이야?" />
+
+        <Button
+            android:id="@+id/btnChat3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:fontFamily="@font/bmfont"
+            android:textColor="@color/vpi__background_holo_light"
+            android:background="@color/fui_transparent"
+            android:onClick="onClick"
+            android:text="PickupBox가 뭐야?" />
+
+        <Button
+            android:id="@+id/btnChat4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="195dp"
+            android:fontFamily="@font/bmfont"
+            android:textColor="@color/vpi__background_holo_light"
+            android:background="@color/fui_transparent"
+            android:onClick="onClick"
+            android:text="기타 문의 사항 안내" />
+
+    </LinearLayout>
+
+    <!--    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <EditText
+                android:id="@+id/EditText_chat"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/Button_send"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:onClick="onClick"
+                android:text="SEND" />
+        </LinearLayout>-->
+
+</LinearLayout>

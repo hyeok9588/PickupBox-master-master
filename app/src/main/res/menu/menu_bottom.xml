@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/tab1"
+        app:showAsAction="always"
+        android:icon="@drawable/homeicon1"
+        android:enabled="true"
+        android:checked="true"
+        android:title="홈" />
+
+    <item android:id="@+id/tab4"
+        app:showAsAction="always"
+        android:icon="@drawable/delinfoicon1"
+        android:enabled="true"
+        android:title="배송 정보"/>
+
+    <item android:id="@+id/tab3"
+        app:showAsAction="always"
+        android:icon="@drawable/plusicon1"
+        android:enabled="true"
+        android:title="택배 등록"/>
+
+
+    <item android:id="@+id/tab2"
+        app:showAsAction="always"
+        android:icon="@drawable/chaticon"
+        android:enabled="true"
+        android:title="채팅"/>
+
+    <item android:id="@+id/tab5"
+        app:showAsAction="always"
+        android:icon="@drawable/usericon1"
+        android:enabled="true"
+        android:title="내 정보"/>
+
+
+</menu>
+

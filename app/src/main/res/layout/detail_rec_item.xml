@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center|top"
+    >
+
+    <LinearLayout
+        android:id="@+id/bottom_wrapper"
+        android:layout_width="160dp"
+        android:layout_height="match_parent"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/tvEdit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#0076a5"
+            android:gravity="center"
+            android:text="상세보기"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/tvDeal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#003c54"
+            android:gravity="center"
+            android:text="딜하기"
+            android:textColor="#fff" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_wrapper1"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/tvPlus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#003c54"
+            android:gravity="center"
+            android:text="관심삭제"
+            android:textColor="#fff" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            app:cardCornerRadius="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/board_color"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:id="@+id/tvDDetailBoxName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/bmfont"
+                            android:text="BoxName"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="15dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvDDetailUserName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/bmfont"
+                            android:text="userName"
+                            android:textColor="@color/design_default_color_secondary_variant"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tvDDetailBoxSize"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/bmfont"
+                            android:text="BoxSize"
+                            android:textColor="@color/design_default_color_secondary_variant"
+                            android:textSize="15sp" />
+
+
+                        <TextView
+                            android:id="@+id/tvDDetailBoxPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/bmfont"
+                            android:text="BoxPrice"
+                            android:textColor="@color/design_default_color_secondary_variant"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="casual"
+                            android:textColor="@color/design_default_color_secondary_variant"
+                            android:textSize="10dp"
+                            android:visibility="invisible"
+
+                            />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+</com.daimajia.swipe.SwipeLayout>

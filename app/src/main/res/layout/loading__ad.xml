@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".Loading_AD">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bmfont"
+        android:textColor="@color/vpi__background_holo_light"
+        android:layout_marginTop="230dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:textSize="45dp"
+        android:text="픽업박스\n픽업하고\n돈도벌고\n니나니뇨"
+
+
+        />
+
+
+
+</LinearLayout>
+

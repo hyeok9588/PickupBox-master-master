@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Main_Frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:shimmer="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/topLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+          <!--  <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:src="@drawable/logo_kor_white" />-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+
+                android:text="픽업박스"
+                android:fontFamily="@font/bmfont"
+                android:textSize="25dp"
+                android:background="@color/fui_transparent"
+                android:textColor="@color/vpi__background_holo_light"
+                />
+        </LinearLayout>
+
+
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.smarteist.autoimageslider.SliderLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:id="@+id/imageSlider"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="@dimen/padding_10"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/SearchCase"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:background="@color/colorPrimaryDark"
+                        android:text="정렬 순서"
+                        android:fontFamily="@font/bmfont"
+                        android:textColor="@color/default_circle_indicator_fill_color"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                    <!--<View
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+
+                        />
+-->
+                    <androidx.appcompat.widget.SearchView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        app:queryHint="찾아보세요"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        />
+
+                  <!--  <Button
+                        android:id="@+id/orderByTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:background="@color/colorPrimaryDark"
+                        android:text="최신 순"
+                        android:fontFamily="@font/bmfont"
+                        android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        />
+
+                    <Button
+                        android:id="@+id/orderBySize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:background="@color/colorPrimaryDark"
+                        android:text="비싼거 먼저"
+                        android:fontFamily="@font/bmfont"
+                        android:textColor="@color/default_circle_indicator_fill_color"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />-->
+
+                    <Button
+                        android:id="@+id/btnGoMap"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:background="@color/colorPrimaryDark"
+                        android:text="지도로 보자"
+                        android:fontFamily="@font/bmfont"
+                        android:textColor="@color/default_circle_indicator_fill_color"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+
+
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:id="@+id/shimmer_view_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical"
+                    shimmer:duration="800">
+
+                    <!-- Adding 7 rows of placeholders -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <include layout="@layout/data_placeholder_layout" />
+                        <include layout="@layout/data_placeholder_layout" />
+                        <include layout="@layout/data_placeholder_layout" />
+                        <include layout="@layout/data_placeholder_layout" />
+                        <include layout="@layout/data_placeholder_layout" />
+
+                    </LinearLayout>
+
+                </com.facebook.shimmer.ShimmerFrameLayout>
+
+                <com.baoyz.widget.PullRefreshLayout
+                    android:id="@+id/swipeRefreshLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp">
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+                </com.baoyz.widget.PullRefreshLayout>
+
+                <!--</LinearLayout>-->
+                <!--</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bmfont"
+                        android:layout_marginLeft="15dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/vpi__background_holo_light"
+                        android:textSize="17dp"
+                        android:text="지하철 역 별 이용 수치" />
+
+                    <ImageView
+                        android:id="@+id/iv_visualizeMap"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15dp"
+                        app:srcCompat="@drawable/ad" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+        </ScrollView>
+
+        <!-- <com.google.android.material.floatingactionbutton.FloatingActionButton
+             android:id="@+id/btnGoMap"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentEnd="true"
+             android:layout_alignParentRight="true"
+             android:layout_alignParentBottom="true"
+             android:layout_margin="30dp"
+             android:layout_gravity="bottom|right"
+             android:background="@drawable/mainpageicon"
+             app:fabSize="normal"
+             app:elevation="5dp"/>-->
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

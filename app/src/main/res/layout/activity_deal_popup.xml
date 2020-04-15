@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="가격 제안이 왔어요"
+            android:fontFamily="@font/bmfont"
+            android:textColor="#ff7a00"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <!-- Notice -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/txtSenderInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:alpha="0.87"
+            android:gravity="center"
+            android:textColor="#000"
+            android:hint="deal sender"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/txtDealPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:alpha="0.87"
+            android:gravity="center"
+            android:textColor="#000"
+            android:hint="deal price"
+            android:textSize="15sp" />
+    </LinearLayout>
+    <!-- Notice -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#66bdbdbd" />
+
+    <!-- 닫기 버튼 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:gravity="center"
+            android:text="거절하기"
+            android:textColor="#ff7a00"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:gravity="center"
+            android:text="승낙하기"
+            android:textColor="#ff7a00"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+    <!--// 닫기 버튼 -->
+
+
+</LinearLayout>

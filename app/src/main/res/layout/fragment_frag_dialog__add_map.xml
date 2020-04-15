@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="450dp"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".FragDialog_AddMap">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bmfont"
+        android:layout_marginLeft="@dimen/padding_10"
+        android:textSize="17dp"
+        android:textColor="@color/vpi__background_holo_light"
+        android:text="지도에서" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:id="@+id/tvPickResult"
+        android:fontFamily="@font/bmfont"
+        android:gravity="center"
+        android:textSize="17dp"
+        android:textColor="@color/vpi__background_holo_light"
+        android:hint="배송지의 마커를 누르세요."/>
+
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapV2"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <Button
+        android:id="@+id/btnOkay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fui_transparent"
+        android:fontFamily="@font/bmfont"
+        android:text="여기로 배송..!" />
+
+
+
+
+</LinearLayout>
