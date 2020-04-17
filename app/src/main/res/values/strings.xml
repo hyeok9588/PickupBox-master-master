@@ -13,6 +13,11 @@
     <string name="logo">LOGO</string>
     <string name="map">지도!</string>
     <string name="title_activity_login">Sign in</string>
+    <!--<string-array name="Dialog">
+        <item>"소비자"</item>
+        <item>"배송자"</item>
+        &lt;!&ndash;<item>"소비자"</item>&ndash;&gt;
+    </string-array>-->
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password (optional)</string>

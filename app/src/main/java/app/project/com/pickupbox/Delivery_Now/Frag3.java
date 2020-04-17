@@ -164,12 +164,12 @@ public class Frag3 extends Fragment {
         btnStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                /*LinearLayout layout2=(LinearLayout)getView().findViewById(R.id.layout2);
+                LinearLayout layout2=(LinearLayout)getView().findViewById(R.id.layout2);
                 layout2.setVisibility(View.GONE);
                 ImageView iv1 = (ImageView)getView().findViewById(R.id.imageView);
                 iv1.setVisibility(View.VISIBLE);
                 LinearLayout layout1=(LinearLayout)getView().findViewById(R.id.layout1);
-                layout1.setVisibility(View.VISIBLE);*/
+                layout1.setVisibility(View.VISIBLE);
             }
         });
         return v;

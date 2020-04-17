@@ -16,6 +16,7 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.provider.Settings;
 import android.text.TextUtils;
 import android.util.Log;
@@ -156,22 +157,37 @@ public class FirstPageFragment2 extends Fragment {
                 SendMsg(2); //2 이벤트 생성
             }
         });
+
+
+
         btnChat3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d("테스트1","확인중");
-                SendMsg(3); //3 이벤트 생성
-                Intent intent=new Intent(getActivity(),Explain.class);
-                startActivity(intent);
-                Log.d("테스트2","확인중");
+                Handler delayHandler = new Handler();
+                delayHandler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        /*Log.d("테스트1","확인중");*/
+                        SendMsg(3); //3 이벤트 생성
+                        Intent intent=new Intent(getActivity(),Explain.class);
+                        startActivity(intent);
+                        /*Log.d("테스트2","확인중");*/
+                    }
+                }, 2000); // 2초 지연을 준 후 시작
             }
         });
         btnChat4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                SendMsg(4); //4 이벤트 생성
-                Intent intent=new Intent(getActivity(), Bulltein.class);
-                startActivity(intent);
+                Handler delayHandler = new Handler();
+                delayHandler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        SendMsg(4);
+                        Intent intent=new Intent(getActivity(),Bulltein.class);
+                        startActivity(intent);
+                    }
+                }, 2000); //
             }
         });
 

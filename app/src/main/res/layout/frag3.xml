@@ -72,13 +72,14 @@
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="match_parent"
-            android:layout_height="500dp"
+            android:layout_height="300dp"
             app:srcCompat="@drawable/simple"
             tools:srcCompat="@drawable/adthree"
             />
         <Button
             android:id="@+id/btn_start"
             android:text="배송시작하기"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             />
