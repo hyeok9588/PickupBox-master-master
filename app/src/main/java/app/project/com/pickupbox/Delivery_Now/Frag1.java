@@ -47,6 +47,8 @@ public class Frag1 extends Fragment {
     private Button btnChoose;
     private Button btnUpload;
     private Button btnTake;//사진촬영은 tedpermission 해야함 일단 제외---오류가 너무많음
+    private Button btnStart;
+
     private ImageView imageView;
 
     private Uri filePath;
@@ -117,6 +119,7 @@ public class Frag1 extends Fragment {
         btnChoose= v.findViewById(R.id.btn_choice);
         btnUpload = v.findViewById(R.id.btn_upload);
         btnTake = v.findViewById(R.id.btn_take);
+        btnStart=v.findViewById(R.id.btn_start);
 
 
         imageView = v.findViewById(R.id.imageView);
@@ -160,6 +163,17 @@ public class Frag1 extends Fragment {
                         startActivityForResult(intent, REQUEST_IMAGE_CAPTURE);
                     }
                 }
+            }
+        });
+        btnStart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                LinearLayout layout2=(LinearLayout)getView().findViewById(R.id.layout2);
+                layout2.setVisibility(View.GONE);
+                ImageView iv1 = (ImageView)getView().findViewById(R.id.imageView);
+                iv1.setVisibility(View.VISIBLE);
+                LinearLayout layout1=(LinearLayout)getView().findViewById(R.id.layout1);
+                layout1.setVisibility(View.VISIBLE);
             }
         });
 
